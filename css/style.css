@@ -70,3 +70,20 @@ html, body {
     padding: 0;
     overflow: hidden; /* Remove rolagem extra */
 }
+
+
+@media (max-width: 768px) { /* Para telas menores, como celulares */
+    .top-bar span {
+        font-size: 10px; /* Reduz o tamanho da fonte */
+        display: block; /* Quebra em várias linhas para melhor leitura */
+        text-align: center;
+    }
+}
+
+@media (max-width: 414px) { /* Para telas menores, como celulares */
+    .top-bar span {
+        font-size: 10px; /* Reduz o tamanho da fonte */
+        display: block; /* Quebra em várias linhas para melhor leitura */
+        text-align: center;
+    }
+}
