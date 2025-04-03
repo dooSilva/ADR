@@ -16,7 +16,18 @@
 .carrossel {
     position: relative;
     display: inline-block;
+    width: 100vw;  /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    overflow: hidden;
 }
+
+
+.carrossel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir toda a área sem distorcer */
+}
+
 
 .carrossel::after {
     content: "";
@@ -50,4 +61,12 @@
 
 .navbar-toggler-icon {
     filter: invert(1); /* Deixa o ícone hambúrguer branco */
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Remove rolagem extra */
 }
